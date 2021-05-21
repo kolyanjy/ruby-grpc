@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package go_away;
+
+service Greeter {
+  rpc GoAway (GoAwayRequest) returns (GoAwayReply) {}
+}
+
+message GoAwayRequest {
+  string name = 1;
+}
+
+message GoAwayReply {
+  string message = 1;
+}
